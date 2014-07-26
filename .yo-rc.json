@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Reactive, Component-based User Interfaces",
+    "packageVersion": "0.0.0",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "banderson",
+    "githubRepository": "reactive-component-ui-presentation"
+  }
+}
