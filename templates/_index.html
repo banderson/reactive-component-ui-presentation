@@ -12,9 +12,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
-    
-        <link rel="stylesheet" href="bower_components/reveal.js/css/theme/default.css" id="theme">
-    
+
+        <!-- <link rel="stylesheet" href="bower_components/reveal.js/css/theme/solarized.css" id="theme"> -->
+
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/overrides.css" />
+
 
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
@@ -67,10 +71,15 @@
                 controls: true,
                 progress: true,
                 history: true,
-                center: true,
+                center: false,
+
+                parallaxBackgroundImage: "https://github.roving.com/banderson/npm-lightning-talk/raw/7da84ccbf17fee8f780f3e0dc11f360ecad8a542/images/ctct_background.png",
+                parallaxBackgroundSize: '1728px 800px',
 
                 theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                backgroundTransition: 'none',
+                transitionSpeed: 'fast',
+                transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
                 // Optional libraries used to extend on reveal.js
                 dependencies: [
