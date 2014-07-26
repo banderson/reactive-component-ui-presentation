@@ -2,6 +2,7 @@
 module.exports = (grunt) ->
 
     grunt.initConfig
+        repo: 'git@github.com:banderson/reactive-component-ui-presentation.git'
 
         watch:
 
@@ -12,7 +13,8 @@ module.exports = (grunt) ->
                     'index.html'
                     'slides/*.md'
                     'slides/*.html'
-                    'js/*.js'
+                    'js/*.js',
+                    'css/*.css'
                 ]
 
             index:
@@ -30,12 +32,12 @@ module.exports = (grunt) ->
             jshint:
                 files: ['js/*.js']
                 tasks: ['jshint']
-        
+
         connect:
 
             livereload:
                 options:
-                    port: 9000
+                    port: 9099
                     # Change hostname to '0.0.0.0' to access
                     # the server from outside.
                     hostname: 'localhost'
@@ -76,7 +78,7 @@ module.exports = (grunt) ->
                     filter: 'isFile'
                 }]
 
-        
+
         buildcontrol:
 
             options:
@@ -86,9 +88,9 @@ module.exports = (grunt) ->
                 message: 'Built from %sourceCommit% on branch %sourceBranch%'
             pages:
                 options:
-                    remote: 'git@github.com:banderson/reactive-component-ui-presentation.git'
+                    remote: "<%= repo %>"
                     branch: 'gh-pages'
-        
+
 
 
     # Load all grunt tasks.
@@ -130,13 +132,13 @@ module.exports = (grunt) ->
             'copy'
         ]
 
-    
+
     grunt.registerTask 'deploy',
         'Deploy to Github Pages', [
             'dist'
             'buildcontrol'
         ]
-    
+
 
     # Define default task.
     grunt.registerTask 'default', [
