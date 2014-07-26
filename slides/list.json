@@ -1,1 +1,41 @@
-["index.md"]
+[
+    "index.html",
+    "making-good-software-is-hard.html",
+    "many-exciting-new-technologies.html",
+    "too-many-new-technologies.html",
+    [
+        "component-based.html",
+        "component-def.html"
+    ],
+    [
+        "history-lesson.html",
+        "me-in-2007.html",
+        "me-every-day-in-2014.html",
+        "managing-state-is-hard.html",
+        "managing-mutable-state-over-time-is-the-devil.html"
+    ],
+    [
+        "reactive.html",
+        "reactive-definition.html",
+        "databinding-1.html",
+        "databinding-2.html",
+        "server-rendering.html",
+        "can-we-simplify.html",
+        "can-we-simplify-2.html"
+    ],
+    [
+        "react-intro.html",
+        "why-react-intro.html",
+        "why-react-rendering-1.html",
+        "why-react-rendering-2.html",
+        "why-react-functional.html",
+        "why-react-functional-2.html",
+        "why-react-components.html",
+        "why-react-composable.html",
+        "why-react-just-javascript.html",
+        "why-react-summary.html",
+        "react-whos-using-list.html",
+        "react-whos-using-atom.html"
+    ],
+    "conclusion.html"
+]
