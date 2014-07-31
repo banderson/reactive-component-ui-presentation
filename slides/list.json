@@ -1,18 +1,16 @@
 [
     "index.html",
-    "making-good-software-is-hard.html",
-    "many-exciting-new-technologies.html",
-    "too-many-new-technologies.html",
     [
-        "component-based.html",
-        "component-def.html"
-    ],
-    [
+        "making-good-software-is-hard.html",
         "history-lesson.html",
         "me-in-2007.html",
         "me-every-day-in-2014.html",
         "managing-state-is-hard.html",
         "managing-mutable-state-over-time-is-the-devil.html"
+    ],
+    [
+        "component-based.html",
+        "component-def.html"
     ],
     [
         "reactive.html",
@@ -26,16 +24,22 @@
     [
         "react-intro.html",
         "why-react-intro.html",
+        "why-react-just-javascript.html",
         "why-react-rendering-1.html",
         "why-react-rendering-2.html",
-        "why-react-functional.html",
+        "why-react-rendering-3.html",
+        "why-react-performance-1.html",
+        "why-react-performance-2.html",
+        "why-react-performance-3.html",
+        "why-react-functional-1.html",
         "why-react-functional-2.html",
-        "why-react-components.html",
-        "why-react-composable.html",
-        "why-react-just-javascript.html",
-        "why-react-summary.html",
+        "why-react-dataflow-1.html",
+        "why-react-dataflow-2.html",
+        "why-react-dataflow-3.html",
+        "why-react-bonus.html",
         "react-whos-using-list.html",
         "react-whos-using-atom.html"
     ],
-    "conclusion.html"
+    "conclusion.html",
+    "links-and-resources.md"
 ]

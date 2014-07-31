@@ -1,20 +1,48 @@
-<h2 style="font-style: normal; font-variant: normal;">Why React?: It's Just JS</h2>
-<div>
-    <br>
-</div>
-<div>
-<ul>
-<li>
-<span style="text-align: center;">Works with existing libraries (jQuery, et al.)<br>
-</span>
-<br>
-</li>
-<li>
-<span style="text-align: center;">No <a href="https://github.com/angular-ui/bootstrap/blob/master/src/accordion/accordion.js#L57-L90">crazy new paradigms</a>: <i>it feels like creating a JS app instead of an insert-your-framework-here app</i>
-</span>
-</li>
-</ul>
-</div>
-<a href="https://twitter.com/ryanflorence/status/476096836655005696">
+<h2><em class="highlight">Why React?</em>  Components</h2>
+
+<pre><code class="js language-js" data-lang="js">/** @jsx React.DOM */
+var LikeButton = React.createClass({
+  getInitialState: function() {
+    return {liked: false};
+  },
+
+  render: function() {
+    var text = this.state.liked ? &#39;like&#39; : &#39;unlike&#39;;
+    return (
+      &lt;p onClick={this.handleClick}&gt;
+        You {text} this. Click to toggle.
+      &lt;/p&gt;
+    );
+  },
+
+  handleClick: function(event) {
+    this.setState({liked: !this.state.liked});
+  },
+});
+
+React.renderComponent(
+  &lt;LikeButton /&gt;,
+  document.getElementById(&#39;example&#39;)
+);</code></pre>
+
+<!-- <ul>
+    <li>
+        <span style="text-align: center;">Works with existing libraries (jQuery, et al.)<br>
+        </span>
+        <br>
+    </li>
+    <li>
+        <span style="text-align: center;">No <a href="https://github.com/angular-ui/bootstrap/blob/master/src/accordion/accordion.js#L57-L90">crazy abstractions</a>: <i>it's just a JS app<br><br>
+        </span>
+    </li>
+    <li>
+        No big rewrite necessary, introduce incrementally (28kb)<br><br>
+    </li>
+    <li>
+        Works in your existing stack (as the "view"), or at the center of a whole new app architecture<br><br>
+    </li>
+</ul> -->
+<!-- <a href="https://twitter.com/ryanflorence/status/476096836655005696">
 <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/banderson/images/520676/Screen_Shot_2014-07-16_at_11.30.44_AM.png">
 </a>
+ -->
