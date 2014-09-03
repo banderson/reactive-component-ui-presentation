@@ -1,0 +1,29 @@
+<h2><em class="highlight">Why React?</em> Components</h2>
+<br>
+Given current state, how should I <em>render</em>?
+<br>
+<pre><code class="js language-js" data-lang="js">
+render: function() {
+    var content = (this.state.text) ? this.state.text : AddNewForm();
+    return React.DOM.tagName({className: 'something'}, content);
+}
+
+</code></pre>
+<pre><code class="js language-js" data-lang="js">/** @jsx React.DOM */
+render: function() {
+    var content = (this.state.text) ? this.state.text : &lt;AddNewForm&gt;;
+    return &lt;div className="something">
+              {content}
+           &lt;/div&gt;;
+}
+
+</code></pre>
+<!-- <pre><code class="js language-js" data-lang="js">/** @jsx React.DOM */
+var TodoList = React.createClass({displayName: 'TodoList',
+  render: function() {
+    var createItem = function(itemText) {
+      return React.DOM.li(null, itemText);
+    };
+    return React.DOM.ul(null, this.props.items.map(createItem));
+  }
+});</code></pre> -->

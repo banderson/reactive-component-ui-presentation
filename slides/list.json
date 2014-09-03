@@ -25,17 +25,28 @@
         "react-intro.html",
         "why-react-intro.html",
         "why-react-just-javascript.html",
+        "why-react-component-breakdown-1.html",
+        "why-react-component-breakdown-2.html",
+        "why-react-component-breakdown-3.html",
+        "why-react-component-breakdown-5.html",
+        "why-react-component-breakdown-4.html"
+    ],
+    [
         "why-react-rendering-1.html",
+        "why-react-performance-1.html",
         "why-react-rendering-2.html",
         "why-react-rendering-3.html",
-        "why-react-performance-1.html",
         "why-react-performance-2.html",
-        "why-react-performance-3.html",
+        "why-react-performance-3.html"
+    ],
+    [
         "why-react-functional-1.html",
         "why-react-functional-2.html",
         "why-react-dataflow-1.html",
         "why-react-dataflow-2.html",
-        "why-react-dataflow-3.html",
+        "why-react-dataflow-3.html"
+    ],
+    [
         "why-react-bonus.html",
         "react-whos-using-list.html",
         "react-whos-using-atom.html"

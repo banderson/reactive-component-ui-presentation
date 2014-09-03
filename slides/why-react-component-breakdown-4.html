@@ -1,0 +1,42 @@
+<h2><em class="highlight">Why React?</em> Components</h2>
+<br>
+Composable into larger <a href="http://jsfiddle.net/johnthethird/NXCyC/9/">applications</a>
+<br>
+<pre><code class="js language-js" data-lang="js">/** @jsx React.DOM */
+var TodoList = React.createClass({
+  propTypes: {items: React.PropTypes.array},
+  render: function() {
+    var createItem = function(itemText) {
+      return &lt;li&gt;{itemText}&lt;/li&gt;;
+    };
+    return &lt;ul&gt;{this.props.items.map(createItem)}&lt;/ul&gt;;
+  }
+});
+var TodoApp = React.createClass({
+  getInitialState: function() {
+    return {items: [], text: &#39;&#39;};
+  },
+  onChange: function(e) {
+    this.setState({text: e.target.value});
+  },
+  handleSubmit: function(e) {
+    e.preventDefault();
+    var nextItems = this.state.items.concat([this.state.text]);
+    var nextText = &#39;&#39;;
+    this.setState({items: nextItems, text: nextText});
+  },
+  render: function() {
+    return (
+      &lt;div&gt;
+        &lt;h3&gt;TODO&lt;/h3&gt;
+        &lt;TodoList items={this.state.items} /&gt;
+        &lt;form onSubmit={this.handleSubmit}&gt;
+          &lt;input onChange={this.onChange} value={this.state.text} /&gt;
+          &lt;button&gt;{&#39;Add #&#39; + (this.state.items.length + 1)}&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    );
+  }
+});
+React.renderComponent(&lt;TodoApp /&gt;, document.body);
+</code></pre>

@@ -1,0 +1,15 @@
+<h2><em class="highlight">Why React?</em> Components</h2>
+<br>
+<a href="http://facebook.github.io/react/docs/component-api.html">Manage</a> Your State
+<br>
+<pre><code class="js language-js" data-lang="js">
+// initial default state
+getInitialState: function() { return {state: 'anything'} };
+getDefaultProps: function() { return { name: 'React' } };
+
+// respond to interactions
+setState: function(object nextState[, function callback]);
+replaceState: function(object nextState[, function callback]);
+forceUpdate: function(callback) //integrate with external app frameworks
+
+</code></pre>

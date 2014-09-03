@@ -9,9 +9,7 @@ var LikeButton = React.createClass({
   render: function() {
     var text = this.state.liked ? &#39;like&#39; : &#39;unlike&#39;;
     return (
-      &lt;p onClick={this.handleClick}&gt;
-        You {text} this. Click to toggle.
-      &lt;/p&gt;
+      React.DOM.p({onClick=this.handleClick), "You {text} this. Click to toggle.")
     );
   },
 
@@ -25,7 +23,7 @@ React.renderComponent(
   document.getElementById(&#39;example&#39;)
 );</code></pre>
 
-<p>No <a href="https://github.com/angular-ui/bootstrap/blob/master/src/accordion/accordion.js#L57-L90">crazy abstractions</a>: <i>it's just a Javascript app.</p>
+<p>No <a href="https://github.com/angular-ui/bootstrap/blob/master/src/accordion/accordion.js#L57-L90">crazy abstractions</a>: <i>it's just Javascript.</p>
 <p><a href="http://facebook.github.io/react/index.html">Other examples</a></p>
 
 <!-- <ul>
