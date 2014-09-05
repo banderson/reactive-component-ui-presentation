@@ -2,28 +2,21 @@
 <br>
 Given current state, how should I <em>render</em>?
 <br>
-<pre><code class="js language-js" data-lang="js">
+<pre><code class="js language-js" data-lang="e4x">/** @jsx React.DOM */
 render: function() {
-    var content = (this.state.text) ? this.state.text : AddNewForm();
-    return React.DOM.tagName({className: 'something'}, content);
+  var buttonText = this.state.running ? 'Stop' : 'Start/Resume';
+
+  return (
+    <ul>
+      {this.state.trx.map(function(trx) {
+        return (
+          <li key={trx.key} className={trx.category}>
+            {trx.time}: {trx.ticker} {trx.price} ({trx.perc})
+          </li>
+        )
+      })}
+    </ul>
+  );
 }
 
 </code></pre>
-<pre><code class="js language-js" data-lang="js">/** @jsx React.DOM */
-render: function() {
-    var content = (this.state.text) ? this.state.text : &lt;AddNewForm&gt;;
-    return &lt;div className="something">
-              {content}
-           &lt;/div&gt;;
-}
-
-</code></pre>
-<!-- <pre><code class="js language-js" data-lang="js">/** @jsx React.DOM */
-var TodoList = React.createClass({displayName: 'TodoList',
-  render: function() {
-    var createItem = function(itemText) {
-      return React.DOM.li(null, itemText);
-    };
-    return React.DOM.ul(null, this.props.items.map(createItem));
-  }
-});</code></pre> -->

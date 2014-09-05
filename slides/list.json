@@ -1,12 +1,10 @@
 [
+    "making-good-software-is-hard.html",
     "index.html",
     [
-        "making-good-software-is-hard.html",
-        "history-lesson.html",
-        "me-in-2007.html",
-        "me-every-day-in-2014.html",
-        "managing-state-is-hard.html",
-        "managing-mutable-state-over-time-is-the-devil.html"
+        "react-intro.html",
+        "why-react-intro.html",
+        "why-react-intro-2.html"
     ],
     [
         "component-based.html",
@@ -14,30 +12,34 @@
     ],
     [
         "reactive.html",
-        "reactive-definition.html",
+        "reactive-definition.html"
+    ],
+    [
+        "history-lesson.html",
+        "me-in-2007.html",
+        "me-every-day-in-2014.html",
+        "managing-mutable-state-over-time-is-the-devil.html",
+        "managing-state-is-hard.html"
+    ],
+    [
+        "reactive-state-the-dom.html",
         "databinding-1.html",
         "databinding-2.html",
         "server-rendering.html",
         "can-we-simplify.html",
-        "can-we-simplify-2.html"
+        "can-we-simplify-2.html",
+        "why-react-rendering-1.html",
+        "why-react-performance-2.html",
+        "why-react-performance-1.html",
+        "why-react-performance-3.html"
     ],
     [
-        "react-intro.html",
-        "why-react-intro.html",
         "why-react-just-javascript.html",
         "why-react-component-breakdown-1.html",
         "why-react-component-breakdown-2.html",
         "why-react-component-breakdown-3.html",
         "why-react-component-breakdown-5.html",
         "why-react-component-breakdown-4.html"
-    ],
-    [
-        "why-react-rendering-1.html",
-        "why-react-performance-1.html",
-        "why-react-rendering-2.html",
-        "why-react-rendering-3.html",
-        "why-react-performance-2.html",
-        "why-react-performance-3.html"
     ],
     [
         "why-react-functional-1.html",

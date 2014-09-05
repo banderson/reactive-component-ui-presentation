@@ -2,41 +2,113 @@
 <br>
 Composable into larger <a href="http://jsfiddle.net/johnthethird/NXCyC/9/">applications</a>
 <br>
-<pre><code class="js language-js" data-lang="js">/** @jsx React.DOM */
-var TodoList = React.createClass({
-  propTypes: {items: React.PropTypes.array},
-  render: function() {
-    var createItem = function(itemText) {
-      return &lt;li&gt;{itemText}&lt;/li&gt;;
-    };
-    return &lt;ul&gt;{this.props.items.map(createItem)}&lt;/ul&gt;;
-  }
-});
-var TodoApp = React.createClass({
-  getInitialState: function() {
-    return {items: [], text: &#39;&#39;};
+<pre><code class="js language-js" data-lang="js">var Application = React.createClass({
+
+  // default HTML attributes and starting state of the component
+  getDefaultProps: function() {
+    return {
+      autostart: false
+    }
   },
-  onChange: function(e) {
-    this.setState({text: e.target.value});
+  getInitialState: function(){
+    return {
+      trx: [],
+      symbols: ['GOOG', 'AAPL', 'FB'],
+      running: this.props.autostart
+    }
   },
-  handleSubmit: function(e) {
-    e.preventDefault();
-    var nextItems = this.state.items.concat([this.state.text]);
-    var nextText = &#39;&#39;;
-    this.setState({items: nextItems, text: nextText});
+
+  // handle incoming data, by updating state all dependant childen will re-render
+  _handleNew: function(data, raw, symbol) {
+    var transactions = this.state.trx.concat(data);
+    if (transactions.length > 10) {
+      transactions.shift()
+    }
+    this.setState({trx: transactions});
   },
+
+
+  // Subscribe and unsubscribe to real-time event feed
+  _startTicker: function() {
+    pubnub.subscribe({
+      channel : this.state.symbols,
+      message : this._handleNew
+    });
+    this.setState({running: true});
+  },
+  _stopTicker: function() {
+    pubnub.unsubscribe({
+      channel : this.state.symbols
+    });
+    this.setState({running: false});
+  },
+
+  // helper functions; it's just javascript(tm)
+  _toggle: function() {
+    var action = this.state.running ? '_stopTicker' : '_startTicker';
+    this[action]();
+  },
+  _clear: function() {
+    this.setState({trx: []});
+  },
+
+  // lifecycle: start ticker when inserted into DOM; cleanup when removed
+  componentDidMount: function() {
+    this._startTicker();
+  },
+  componentWillUnmount: function() {
+    this._stopTicker();
+  },
+
+  // RENDER!
   render: function() {
     return (
-      &lt;div&gt;
-        &lt;h3&gt;TODO&lt;/h3&gt;
-        &lt;TodoList items={this.state.items} /&gt;
-        &lt;form onSubmit={this.handleSubmit}&gt;
-          &lt;input onChange={this.onChange} value={this.state.text} /&gt;
-          &lt;button&gt;{&#39;Add #&#39; + (this.state.items.length + 1)}&lt;/button&gt;
-        &lt;/form&gt;
-      &lt;/div&gt;
+      <div>
+        <Transactions data={this.state.trx} />
+        <button onClick={this._toggle}>{this.state.running ? 'Stop' : 'Start/Resume'}</button>
+        <button onClick={this._clear}>Reset</button>
+      </div>
     );
   }
 });
-React.renderComponent(&lt;TodoApp /&gt;, document.body);
+
+
+// mount the application into the DOM
+var main = document.getElementById('main');
+React.renderComponent(<Application autostart="true" />, main);
+
+
+
+
+var Transaction = React.createClass({
+  render: function() {
+    var trx = this.props.data;
+    return (
+      <li key={trx.key} className={trx.category}>
+        {trx.time}: {trx.ticker} {trx.price} ({trx.perc})
+      </li>
+    );
+  }
+});
+
+
+
+
+var Transactions = React.createClass({
+  getDefaultProps: function() {
+    return {
+      data: []
+    };
+  },
+
+  render: function() {
+    return (
+      <ul>
+        {this.props.data.map(function(trx) {
+          return <Transaction data={trx} />
+        })}
+      </ul>
+    );
+  }
+});
 </code></pre>

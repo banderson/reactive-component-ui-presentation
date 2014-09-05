@@ -1,20 +1,19 @@
 <h2><em class="highlight">Why React?</em> Components</h2>
 <br>
-Respond to Events
+Respond to Native Events
 <br>
-<pre><code class="js language-js" data-lang="js">
-var LikeButton = React.createClass({
-  render: function() {
-    var text = this.state.liked ? &#39;like&#39; : &#39;unlike&#39;;
-    return (
-      &lt;p onClick={this.handleClick}&gt;
-        You {text} this. Click to toggle.
-      &lt;/p&gt;
-    );
-  },
-  handleClick: function(event) {
-    this.setState({liked: !this.state.liked});
-  },
-});
+<pre><code class="js language-js" data-lang="js">var Transactions = React.createClass({
+  _toggle: function(){},
 
-</code></pre>
+  _clear: function(){},
+
+  render: function() {
+    // ...
+    return (
+      <div>
+        <button onClick={this._toggle}>Start/Stop</button>
+        <button onClick={this._clear}>Reset</button>
+      </div>
+    );
+  }
+});</code></pre>

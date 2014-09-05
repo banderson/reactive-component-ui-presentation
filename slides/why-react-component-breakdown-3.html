@@ -2,14 +2,27 @@
 <br>
 <a href="http://facebook.github.io/react/docs/component-api.html">Manage</a> Your State
 <br>
-<pre><code class="js language-js" data-lang="js">
-// initial default state
-getInitialState: function() { return {state: 'anything'} };
-getDefaultProps: function() { return { name: 'React' } };
+<pre><code class="js language-js" data-lang="js">var Transactions = React.createClass({
 
-// respond to interactions
-setState: function(object nextState[, function callback]);
-replaceState: function(object nextState[, function callback]);
-forceUpdate: function(callback) //integrate with external app frameworks
+  // like a declarative constructor
+  getInitialState: function(){
+    return {
+      trx: [],
+      symbols: ['GOOG', 'AAPL', 'FB'],
+      running: false
+    }
+  },
+
+  // this receives new real-time data and updates local state
+  _handleTransaction: function(data) {
+    var transactions = this.state.trx.concat(data);
+    if (transactions.length > 10) {
+      transactions.shift();
+    }
+    this.setState({trx: transactions});
+  }
+
+  // Not shown: replaceState(), forceUpdate()...
+});
 
 </code></pre>

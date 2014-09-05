@@ -2,17 +2,25 @@
 <br>
 <a href="http://facebook.github.io/react/docs/component-specs.html#lifecycle-methods">Manage</a> Your Lifecycle
 <br><br>
-<pre><code class="js language-js" data-lang="js">componentDidMount: function() { //hook into DOM, jQuery, etc. }
+<pre><code class="hljs js language-js" data-lang="js">var Transactions = React.createClass({
+  // hook into DOM, jQuery, etc.
+  componentDidMount: function() {
+    this._toggle();
+  },
 
-componentWillUpdate: function(object nextProps, object nextState) {  }
+  // cleanup...
+  componentWillUnmount: function() {
+    this._stopTicker();
+  },
 
-componentWillUnmount: function() { //cleanup... }
+  // care to compare old vs new state before update?
+  componentWillUpdate: function(object nextProps, object nextState) {  }
 
-shouldComponentUpdate: function(object nextProps, object nextState) {
-    if (imSmarterThanReact())
-        return true;
-    return false;
-}
-
-// etc...
+  // smarter than react? Dictate when to re-render!
+  shouldComponentUpdate: function(object nextProps, object nextState) {
+      if (imSmarterThanReact())
+          return true;
+      return false;
+  }
+});
 </code></pre>

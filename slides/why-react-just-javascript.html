@@ -1,49 +1,19 @@
 <h2><em class="highlight">Why React?</em>  Components</h2>
-
+<br>
 <pre><code class="js language-js" data-lang="js">/** @jsx React.DOM */
-var LikeButton = React.createClass({
-  getInitialState: function() {
-    return {liked: false};
-  },
-
+var Transaction = React.createClass({
   render: function() {
-    var text = this.state.liked ? &#39;like&#39; : &#39;unlike&#39;;
+    var transaction = this.props.transaction;
     return (
-      React.DOM.p({onClick=this.handleClick), "You {text} this. Click to toggle.")
+      <li classname="{transaction.category}">
+        {transaction.ticker} stock price: {transaction.price}
+      </li>
     );
-  },
-
-  handleClick: function(event) {
-    this.setState({liked: !this.state.liked});
-  },
+  }
 });
 
-React.renderComponent(
-  &lt;LikeButton /&gt;,
-  document.getElementById(&#39;example&#39;)
-);</code></pre>
+var data = {category: 'gain', price: '145.89', ticker: 'CTCT'};
 
+React.renderComponent(<Transaction transaction={data} />, mountNode);</code></pre>
+<br>
 <p>No <a href="https://github.com/angular-ui/bootstrap/blob/master/src/accordion/accordion.js#L57-L90">crazy abstractions</a>: <i>it's just Javascript.</p>
-<p><a href="http://facebook.github.io/react/index.html">Other examples</a></p>
-
-<!-- <ul>
-    <li>
-        <span style="text-align: center;">Works with existing libraries (jQuery, et al.)<br>
-        </span>
-        <br>
-    </li>
-    <li>
-        <span style="text-align: center;">No <a href="https://github.com/angular-ui/bootstrap/blob/master/src/accordion/accordion.js#L57-L90">crazy abstractions</a>: <i>it's just a JS app<br><br>
-        </span>
-    </li>
-    <li>
-        No big rewrite necessary, introduce incrementally (28kb)<br><br>
-    </li>
-    <li>
-        Works in your existing stack (as the "view"), or at the center of a whole new app architecture<br><br>
-    </li>
-</ul> -->
-<!-- <a href="https://twitter.com/ryanflorence/status/476096836655005696">
-<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/banderson/images/520676/Screen_Shot_2014-07-16_at_11.30.44_AM.png">
-</a>
- -->
