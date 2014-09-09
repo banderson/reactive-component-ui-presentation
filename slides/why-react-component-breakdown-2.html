@@ -1,19 +1,21 @@
-<h2><em class="highlight">Why React?</em> Components</h2>
+<h2><em class="highlight">Why React?</em> Handling Events</h2>
 <br>
-Respond to Native Events
-<br>
-<pre><code class="js language-js" data-lang="js">var Transactions = React.createClass({
-  _toggle: function(){},
+<!-- Respond to Native Events
+<br> -->
+<pre><code class="js language-js" data-lang="js">var Stocks = React.createClass({
+  // event handlers are just regular functions
+  this.toggle = function(event) { },
 
-  _clear: function(){},
+  // 'event' object passed in as usual
+  this.reset = function(event) { },
 
   render: function() {
-    // ...
     return (
-      <div>
-        <button onClick={this._toggle}>Start/Stop</button>
-        <button onClick={this._clear}>Reset</button>
-      </div>
+      &lt;div&gt;
+        &lt;Transactions data={this.state.transactions} /&gt;
+        &lt;button onClick={this.toggle}&gt;{this.state.running ? 'Stop' : 'Start/Resume'}&lt;/button&gt;
+        &lt;button onClick={this.reset}&gt;Reset&lt;/button&gt;
+      &lt;/div&gt;
     );
   }
 });</code></pre>

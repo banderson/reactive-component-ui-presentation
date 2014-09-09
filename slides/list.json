@@ -3,8 +3,8 @@
     "index.html",
     [
         "react-intro.html",
-        "why-react-intro.html",
-        "why-react-intro-2.html"
+        "react-whos-using-list.html",
+        "react-whos-using-atom.html"
     ],
     [
         "component-based.html",
@@ -15,11 +15,9 @@
         "reactive-definition.html"
     ],
     [
-        "history-lesson.html",
-        "me-in-2007.html",
+        "managing-state-is-hard.html",
         "me-every-day-in-2014.html",
-        "managing-mutable-state-over-time-is-the-devil.html",
-        "managing-state-is-hard.html"
+        "managing-mutable-state-over-time-is-the-devil.html"
     ],
     [
         "reactive-state-the-dom.html",
@@ -29,17 +27,25 @@
         "can-we-simplify.html",
         "can-we-simplify-2.html",
         "why-react-rendering-1.html",
-        "why-react-performance-2.html",
-        "why-react-performance-1.html",
-        "why-react-performance-3.html"
+        "why-react-rendering-2.html",
+        "why-react-rendering-source-control.html",
+        "demo.html"
     ],
     [
-        "why-react-just-javascript.html",
+        "why-react-component-breakdown-0.html",
+        "why-react-component-breakdown-0-jsx.html",
         "why-react-component-breakdown-1.html",
-        "why-react-component-breakdown-2.html",
         "why-react-component-breakdown-3.html",
-        "why-react-component-breakdown-5.html",
-        "why-react-component-breakdown-4.html"
+        "why-react-component-breakdown-4.html",
+        "why-react-component-breakdown-6.html",
+        "why-react-component-breakdown-2.html",
+        "why-react-component-breakdown-5.html"
+    ],
+    [
+        "why-react-performance-1.html",
+        "why-react-performance-2.html",
+        "demo-1.html",
+        "demo-32-react.html"
     ],
     [
         "why-react-functional-1.html",
@@ -50,9 +56,12 @@
     ],
     [
         "why-react-bonus.html",
-        "react-whos-using-list.html",
-        "react-whos-using-atom.html"
+        "why-react-bonus-server-rendering.html",
+        "why-react-bonus-testing.html"
     ],
+    "why-react-bonus-contagious.html",
+    "making-good-software-is-hard-2.html",
+    "choose-simplicity.html",
     "conclusion.html",
     "links-and-resources.md"
 ]

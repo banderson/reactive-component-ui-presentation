@@ -11,11 +11,19 @@
     return (
       &lt;ul&gt;
         {this.props.data.map(function(trx) {
-          return &lt;li key={trx.key} className={trx.category}&gt;
-                   {trx.time}: {trx.ticker} {trx.price} ({trx.perc})
-                 &lt;/li&gt;
+          return &lt;Transaction transaction={trx} /&gt;
         })}
       &lt;/ul&gt;
+    );
+  }
+});</code></pre>
+<pre><code class="js language-js" data-lang="js">var Transaction = React.createClass({
+  render: function() {
+    var trx = this.props.transaction;
+    return (
+      &lt;li key={trx.key} className={trx.category}&gt;
+        {trx.time}: {trx.ticker} {trx.price} ({trx.perc})
+      &lt;/li&gt;
     );
   }
 });</code></pre>

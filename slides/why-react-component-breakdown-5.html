@@ -1,19 +1,19 @@
-<h2><em class="highlight">Why React?</em> Components</h2>
+<h2><em class="highlight">Why React?</em> Lifecycle</h2>
 <br>
-<a href="http://facebook.github.io/react/docs/component-specs.html#lifecycle-methods">Manage</a> Your Lifecycle
-<br><br>
+<!-- <a href="http://facebook.github.io/react/docs/component-specs.html#lifecycle-methods">Manage</a> Your Lifecycle
+<br><br> -->
 <pre><code class="hljs js language-js" data-lang="js">var Transactions = React.createClass({
   // hook into DOM, jQuery, etc.
   componentDidMount: function() {
-    this._toggle();
+    this.startTicker();
   },
 
   // cleanup...
   componentWillUnmount: function() {
-    this._stopTicker();
+    this.stopTicker();
   },
 
-  // care to compare old vs new state before update?
+  // compare old vs new state before update
   componentWillUpdate: function(object nextProps, object nextState) {  }
 
   // smarter than react? Dictate when to re-render!

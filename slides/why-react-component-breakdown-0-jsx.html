@@ -1,0 +1,21 @@
+<h2><em class="highlight">Why React?</em>  Components: JSX</h2>
+<br>
+<pre><code class="js language-js" data-lang="js"> // the same thing
+ &lt;Stocks show="AAPL,GOOG" autostart /&gt;
+ Stocks({show: "AAPL,GOOG", autostart: true})
+
+</code></pre>
+
+<pre><code class="js language-js" data-lang="js"> &lt;ul&gt;
+     &lt;li id="first"&gt;Item!&lt;/li&gt;
+     &lt;li&gt;Another!&lt;/li&gt;
+ &lt;/ul&gt;
+
+ React.DOM.ul(null,
+     React.DOM.li({id: 'first'}, &quot;List!&quot;),
+     React.DOM.li(null, &quot;Another!&quot;)
+ );
+</code></pre>
+
+<br>
+<p class="fragment"><a href="http://facebook.github.io/react/jsx-compiler.html">JSX</a> is <i>just Javascript.</i> Is it worse than <a href="https://github.com/angular-ui/bootstrap/blob/master/src/accordion/accordion.js#L57-L90">the alternative</a>?</p>

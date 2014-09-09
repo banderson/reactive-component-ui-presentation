@@ -1,28 +1,42 @@
-<h2><em class="highlight">Why React?</em> Components</h2>
+<h2><em class="highlight">Why React?</em> Internal State</h2>
 <br>
-<a href="http://facebook.github.io/react/docs/component-api.html">Manage</a> Your State
-<br>
-<pre><code class="js language-js" data-lang="js">var Transactions = React.createClass({
-
-  // like a declarative constructor
+<!-- <a href="http://facebook.github.io/react/docs/component-api.html">Manage</a> Your State
+<br> -->
+<pre><code class="js language-js" data-lang="js">var Stocks = React.createClass({
+  // state is internal
   getInitialState: function(){
     return {
-      trx: [],
-      symbols: ['GOOG', 'AAPL', 'FB'],
-      running: false
+      transactions: [],
+      running: this.props.autostart
     }
   },
 
-  // this receives new real-time data and updates local state
-  _handleTransaction: function(data) {
-    var transactions = this.state.trx.concat(data);
+  // Subscribe to real-time event feed
+  _startTicker: function() {
+    pubnub.subscribe({
+      channel : this.props.symbols,
+      message : this._handleNew
+    });
+    this.setState({running: true});
+  },
+
+  // handle incoming data
+  _handleNew: function(data) {
+    var transactions = this.state.transactions.concat(data);
     if (transactions.length > 10) {
-      transactions.shift();
+      transactions.shift()
     }
-    this.setState({trx: transactions});
+    this.setState({transactions: transactions});
+  },
+
+  render: function() {
+    return (
+      &lt;div&gt;
+        &lt;Transactions data={this.state.transactions} /&gt;
+        &lt;button onClick={this.toggle}&gt;{this.state.running ? 'Stop' : 'Start/Resume'}&lt;/button&gt;
+        &lt;button onClick={this.reset}&gt;Reset&lt;/button&gt;
+      &lt;/div&gt;
+    );
   }
 
-  // Not shown: replaceState(), forceUpdate()...
-});
-
-</code></pre>
+});</code></pre>
