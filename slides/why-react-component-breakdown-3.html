@@ -3,7 +3,7 @@
 <!-- <a href="http://facebook.github.io/react/docs/component-api.html">Manage</a> Your State
 <br> -->
 <pre><code class="js language-js" data-lang="js">var Stocks = React.createClass({
-  // state is internal
+  // state is self-generated, internal
   getInitialState: function(){
     return {
       transactions: [],
@@ -11,17 +11,12 @@
     }
   },
 
-  // Subscribe to real-time event feed
   _startTicker: function() {
-    pubnub.subscribe({
-      channel : this.props.symbols,
-      message : this._handleNew
-    });
     this.setState({running: true});
   },
 
   // handle incoming data
-  _handleNew: function(data) {
+  _handleData: function(data) {
     var transactions = this.state.transactions.concat(data);
     if (transactions.length > 10) {
       transactions.shift()

@@ -1,18 +1,11 @@
 [
     "making-good-software-is-hard.html",
     "index.html",
+    "many-exciting-new-technologies.html",
     [
         "react-intro.html",
         "react-whos-using-list.html",
         "react-whos-using-atom.html"
-    ],
-    [
-        "component-based.html",
-        "component-def.html"
-    ],
-    [
-        "reactive.html",
-        "reactive-definition.html"
     ],
     [
         "managing-state-is-hard.html",
@@ -20,9 +13,14 @@
         "managing-mutable-state-over-time-is-the-devil.html"
     ],
     [
+        "reactive.html",
+        "reactive-definition.html"
+    ],
+    [
         "reactive-state-the-dom.html",
         "databinding-1.html",
         "databinding-2.html",
+        "why-react-bonus-contagious-angular-notes.html",
         "server-rendering.html",
         "can-we-simplify.html",
         "can-we-simplify-2.html",
@@ -55,11 +53,10 @@
         "why-react-dataflow-3.html"
     ],
     [
-        "why-react-bonus.html",
-        "why-react-bonus-server-rendering.html",
-        "why-react-bonus-testing.html"
+        "why-react-bonus.html"
     ],
-    "why-react-bonus-contagious.html",
+    "why-react-bonus-contagious-angular-tweet.html",
+    "why-react-bonus-contagious-ember.html",
     "making-good-software-is-hard-2.html",
     "choose-simplicity.html",
     "conclusion.html",
