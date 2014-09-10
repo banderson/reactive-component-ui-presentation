@@ -1,0 +1,29 @@
+<h2><em class="highlight">Why React?</em> Predictability</h2>
+<div><br></div>
+
+<strong>min(Time to find Root Cause)</strong><br><br>
+<em>"We want to reduce the number of bugs in the system, but it's not really actionable.
+Instead, we found that minimizing the time to find the root cause of bugs was a better proxy..."</em>
+<div style="text-align: right;">
+    <span>&mdash;<a href="https://speakerdeck.com/vjeux/why-does-react-scale-jsconf-2014">@Vjeux</a> &nbsp; &nbsp;</span>
+</div>
+
+<pre><code class="js language-js" data-lang="js">var Component = React.createClass({
+  // props are immutable; if you receive wrong data, bug came from OUTSIDE
+  getDefaultProps: function() {
+    return {
+      anything: true
+    }
+  },
+
+  // validation, freak out when getting unexpected values (during dev)
+  propTypes: {
+    anything: React.PropTypes.bool.required
+  },
+
+  // state is local, mutable; if bug is with state, it is INSIDE the component
+  mutateAllTheThings: function() {
+    this.setState({...})
+  }
+</code></pre>
+
