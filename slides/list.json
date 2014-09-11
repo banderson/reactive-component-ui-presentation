@@ -27,7 +27,6 @@
         "can-we-simplify.html",
         "can-we-simplify-2.html",
         "why-react-rendering-1.html",
-        "why-react-rendering-2.html",
         "why-react-rendering-source-control.html",
         "demo.html",
         "demo-native.html",
@@ -45,15 +44,16 @@
     ],
     [
         "why-react-performance-1.html",
+        "why-react-rendering-2.html",
         "why-react-performance-2.html",
         "demo-1.html"
     ],
     [
         "why-react-functional-1.html",
         "why-react-functional-2.html",
-        "why-react-dataflow-1.html",
         "why-react-functional-3.html",
         "why-react-functional-4.html",
+        "why-react-dataflow-1.html",
         "why-react-dataflow-2.html",
         "why-react-dataflow-3.html"
     ],
