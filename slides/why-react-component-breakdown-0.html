@@ -1,17 +1,18 @@
 <h2><em class="highlight">Why React?</em>  Components</h2>
-<br>
-<pre><code class="js language-js" data-lang="js">
-// mount custom component into the DOM
-React.renderComponent(&lt;Stocks show="AAPL,GOOG" autostart /&gt;, document.body);
-
+<!-- <br> -->
+<pre><code class="js language-js" data-lang="js"> React.renderComponent(
+    &lt;img src="imgur.com/animated.gif" /&gt;,
+    document.body
+ );
 </code></pre>
-<pre><code class="js language-js" data-lang="js">
-// you could use existing components (HTML tags) as well
-React.renderComponent(&lt;img src="imgur.com/animated.gif" /&gt;, mountNode);
 
+<p class="fragment" style="height: 200px; vertical-align: center">
+    <img src="https://31.media.tumblr.com/ec34f75544ac4a4d681540f5762622ab/tumblr_inline_n9hvycS31e1rxjxpj.gif" align="right" style="margin-right: 100px"><br><br>Don't. Freak. Out.
+</p>
+<pre class="fragment"><code class="js language-js" data-lang="js">// custom component added the same way
+React.renderComponent(
+    &lt;Stocks show="AAPL,GOOG" autostart /&gt;,
+    document.body
+);
 </code></pre>
-<br>
-<p class="fragment">Don't. Freak. Out. <br>
-<img src="https://31.media.tumblr.com/ec34f75544ac4a4d681540f5762622ab/tumblr_inline_n9hvycS31e1rxjxpj.gif" alt=""></p>
-<!-- <img src="http://www.deargodwhyussports.com/uploads/2/1/9/7/2197555/3200771_orig.gif" alt=""> -->
-<br>
+

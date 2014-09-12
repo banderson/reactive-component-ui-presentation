@@ -1,4 +1,4 @@
-## More Links and Resources
+## On the Shoulders of Giants
 
 * [Going Big with React](https://skillsmatter.com/skillscasts/5429-going-big-with-react)
 * [React's Diff Algorithm in Detail](http://calendar.perfplanet.com/2013/diff/)

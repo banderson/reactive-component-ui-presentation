@@ -2,6 +2,7 @@
     "index.html",
     "many-exciting-new-technologies.html",
     "making-good-software-is-hard.html",
+    "agenda.html",
     [
         "react-intro.html",
         "react-whos-using-list.html",
@@ -49,21 +50,23 @@
         "demo-1.html"
     ],
     [
+        "why-react-functional-00.html",
+        "why-react-functional-0.html",
         "why-react-functional-1.html",
         "why-react-functional-2.html",
         "why-react-functional-3.html",
         "why-react-functional-4.html",
+        "why-react-functional-5.html",
+        "why-react-functional-6.html",
         "why-react-dataflow-1.html",
-        "why-react-dataflow-2.html",
-        "why-react-dataflow-3.html"
+        "why-react-functional-7.html",
+        "why-react-functional-8.html",
+        "choose-simplicity.html"
     ],
     [
         "why-react-bonus.html"
     ],
-    "why-react-bonus-contagious-angular-tweet.html",
-    "why-react-bonus-contagious-ember.html",
-    "making-good-software-is-hard-2.html",
-    "choose-simplicity.html",
-    "conclusion.html",
-    "links-and-resources.md"
+    "review.html",
+    "links-and-resources.md",
+    "conclusion.html"
 ]

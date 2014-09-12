@@ -1,0 +1,14 @@
+<h1><em class="highlight">Why React?</em> Immutability</h1>
+<div><br></div>
+
+<h3>What if I <em>want</em> the component to update it?<br></h3>
+
+<pre class="fragment"><code class="js language-js" data-lang="js">var model = new Transaction({amount: 100.00});
+
+var handler = function(data) { //update it... };
+
+React.renderComponent(
+  &lt;App onChange={handler} data={model} /&gt;,
+  document.body
+);
+</code></pre>

@@ -1,7 +1,18 @@
-<h1><em class="highlight">Fun Fact</em></h1>
-<div><br><br></div>
+<h1><em class="highlight">Why React?</em> Functional</h1>
+<div><br></div>
 
-<h1 class="fragment">Predictable &gt; Cool</h1>
+<h3><em>Composition of functions as primary mechanism for building programs</em></h3>
+
+<pre class="fragment"><code class="js language-js" data-lang="js">StocksApplication(
+    { symbols: 'GOOG, FB, AAPL', autostart: true },
+    Transactions(
+        null,
+        Transaction({amount: 45.78, stock: 'GOOG'}),
+        Transaction({amount: 15.78, stock: 'FB'}),
+        Transaction({amount: 405.34, stock: 'AAPL'})
+    )
+);
+</code></pre>
 
 <aside class="notes">
     <h1>cool goes out the window when it's crunch-time</h1>
