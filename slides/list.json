@@ -29,9 +29,7 @@
         "can-we-simplify-2.html",
         "why-react-rendering-1.html",
         "why-react-rendering-source-control.html",
-        "demo.html",
-        "demo-native.html",
-        "demo-react.html"
+        "demo.html"
     ],
     [
         "why-react-component-breakdown-0.html",
