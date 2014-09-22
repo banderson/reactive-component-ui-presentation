@@ -115,14 +115,14 @@ var Transactions = React.createClass({
     this.setState({running: true});
     setTimeout(this._stopTicker.bind(this), 10000);
   },
-  
+
   _stopTicker: function() {
     pubnub.unsubscribe({
       channel : this.state.symbols
     });
     this.setState({running: false});
   },
-  
+
   _toggle: function() {
     if (this.state.running) {
       this._stopTicker()
@@ -130,13 +130,17 @@ var Transactions = React.createClass({
       this._startTicker()
     }
   },
-  
+
   _clear: function() {
     this.setState({trx: []});
   },
-  
+
   componentDidMount: function() {
     this._toggle();
+  },
+
+  componentWillUnmount: function() {
+    this._stopTicker();
   },
 
   render: function() {
