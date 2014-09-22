@@ -1,7 +1,6 @@
 [
     "index.html",
     "many-exciting-new-technologies.html",
-    "making-good-software-is-hard.html",
     "agenda.html",
     [
         "react-intro.html",
@@ -10,6 +9,7 @@
         "react-intro-2.html"
     ],
     [
+        "making-good-software-is-hard.html",
         "me-in-2007.html",
         "me-every-day-in-2014.html",
         "managing-state-is-hard.html",
