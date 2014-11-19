@@ -30,8 +30,8 @@
         "why-react-rendering-1.html",
         "why-react-rendering-source-control.html",
         "demo.html",
-        "demo-native.html",
-        "demo-react.html"
+        "demo-ticker-backbone.html",
+        "demo-ticker-react.html"
     ],
     [
         "why-react-component-breakdown-0.html",
@@ -47,7 +47,7 @@
         "why-react-performance-1.html",
         "why-react-rendering-2.html",
         "why-react-performance-2.html",
-        "demo-1.html"
+        "demo-audio.html"
     ],
     [
         "why-react-functional-00.html",
