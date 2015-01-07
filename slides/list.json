@@ -1,7 +1,7 @@
 [
     "index.html",
-    "many-exciting-new-technologies.html",
     "agenda.html",
+    "many-exciting-new-technologies.html",
     "react-intro-2.html",
     [
         "making-good-software-is-hard.html",
@@ -45,13 +45,13 @@
         "why-react-functional-6.html",
         "why-react-dataflow-1.html",
         "why-react-functional-7.html",
-        "why-react-functional-8.html",
-        "choose-simplicity.html"
+        "why-react-functional-8.html"
     ],
     [
         "why-react-bonus.html"
     ],
     "review.html",
-    "links-and-resources.md",
-    "conclusion.html"
+    "choose-simplicity.html",
+    "conclusion.html",
+    "links-and-resources.md"
 ]
