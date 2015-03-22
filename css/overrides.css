@@ -10,6 +10,7 @@
 
 .highlight, .fragment.highlight-blue.visible {
     background-color: rgba(92, 171, 212, 0.9);
+    /*background-color: rgba(247,118,31,0.9);*/
     color: #fff !important;
     padding: 10px !important;
 }
@@ -45,10 +46,12 @@ html * {
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fdf6e3;
-  background-color: #fdf6e3; }
+  background: url('../img/hubspot.png') no-repeat;
+  background-position: 105.5% 139%;
+  background-size: 30%;}
 
 .reveal {
+  background-color: rgba(255,255,255, 0.6);
   font-family: "Lato", sans-serif;
   font-size: 36px;
   font-weight: normal;
