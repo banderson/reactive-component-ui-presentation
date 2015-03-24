@@ -47,8 +47,12 @@ html * {
  *********************************************/
 body {
   background: url('../img/keynote-logo.png') no-repeat;
-  background-position: bottom left;
+  background-position: bottom right;
   background-size: 15%;
+}
+
+.controls {
+    display: none;
 }
 
 .reveal {
