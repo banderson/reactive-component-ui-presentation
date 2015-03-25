@@ -1,8 +1,8 @@
 [
     "index.html",
     "agenda.html",
+    "react-intro.html",
     "react-intro-2.html",
-    "many-exciting-new-technologies.html",
     [
         "making-good-software-is-hard.html",
         "me-in-2007.html",
@@ -54,6 +54,6 @@
     ],
     "review.html",
     "choose-simplicity.html",
-    "conclusion.html",
+    "thanks.html",
     "links-and-resources.md"
 ]
