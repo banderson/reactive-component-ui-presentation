@@ -52,7 +52,7 @@ body {
 }
 
 .controls {
-    display: none;
+    display: none !important;
 }
 
 .reveal {
