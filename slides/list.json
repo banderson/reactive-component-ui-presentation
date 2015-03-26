@@ -11,10 +11,6 @@
         "managing-mutable-state-over-time-is-the-devil.html"
     ],
     [
-        "reactive.html",
-        "reactive-definition.html"
-    ],
-    [
         "reactive-state-the-dom.html",
         "databinding-1.html",
         "databinding-2.html",
@@ -31,8 +27,7 @@
         "why-react-performance-2.html",
         "why-react-performance-dont-care.html",
         "why-react-performance-dont-care-2.html",
-        "why-react-origins.html",
-        "why-react-origins-abramov.html"
+        "why-react-origins.html"
     ],
     [
         "why-react-functional-00.html",
@@ -44,12 +39,11 @@
         "why-react-functional-5.html",
         "why-react-functional-6.html",
         "why-react-dataflow-1.html",
-        "why-react-functional-7.html",
-        "why-react-functional-8.html"
+        "why-react-functional-7.html"
     ],
     "choose-simplicity.html",
     "why-react-bonus.html",
     "review.html",
-    "thanks.html",
-    "links-and-resources.md"
+    "links-and-resources.md",
+    "thanks.html"
 ]
