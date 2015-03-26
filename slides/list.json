@@ -21,12 +21,9 @@
         "why-react-bonus-contagious-angular-notes.html",
         "server-rendering.html",
         "can-we-simplify.html",
-        "can-we-simplify-2.html",
         "why-react-rendering-1.html",
         "why-react-rendering-source-control.html",
-        "demo.html",
-        "demo-ticker-backbone.html",
-        "demo-ticker-react.html"
+        "demo.html"
     ],
     [
         "why-react-performance-1.html",
@@ -34,7 +31,8 @@
         "why-react-performance-2.html",
         "why-react-performance-dont-care.html",
         "why-react-performance-dont-care-2.html",
-        "why-react-origins.html"
+        "why-react-origins.html",
+        "why-react-origins-abramov.html"
     ],
     [
         "why-react-functional-00.html",
@@ -49,11 +47,9 @@
         "why-react-functional-7.html",
         "why-react-functional-8.html"
     ],
-    [
-        "why-react-bonus.html"
-    ],
-    "review.html",
     "choose-simplicity.html",
+    "why-react-bonus.html",
+    "review.html",
     "thanks.html",
     "links-and-resources.md"
 ]

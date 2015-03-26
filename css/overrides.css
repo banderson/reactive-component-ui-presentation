@@ -28,12 +28,26 @@
     text-decoration: line-through;
 }
 
+.hs {
+    line-height: 80px !important;
+    vertical-align: top;
+}
+
+.hs img {
+    padding-left: 10px;
+    height: 71px;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    position: relative;
+    top: 15px;
+}
+
 code {
     padding-left: 20px !important;
     font-size: 160% !important;
     line-height: 130% !important;
     width: 1400px !important;
-    margin-left: -200px !important;
+    margin-left: -100px !important;
     max-height: 550px !important;
 }
 
