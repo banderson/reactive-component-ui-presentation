@@ -10,6 +10,7 @@
 
 .highlight, .fragment.highlight-blue.visible {
     background-color: rgba(92, 171, 212, 0.9);
+    /*background-color: rgba(247,118,31,0.9);*/
     color: #fff !important;
     padding: 10px !important;
 }
@@ -27,11 +28,27 @@
     text-decoration: line-through;
 }
 
+.hs {
+    line-height: 80px !important;
+    vertical-align: top;
+}
+
+.hs img {
+    padding-left: 10px;
+    height: 71px;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    position: relative;
+    top: 15px;
+}
+
 code {
+    padding-left: 20px !important;
     font-size: 160% !important;
     line-height: 130% !important;
-    /*width: 1300px !important;*/
-    /*margin-left: -100px !important;*/
+    width: 1400px !important;
+    margin-left: -100px !important;
+    max-height: 550px !important;
 }
 
 
@@ -43,10 +60,17 @@ html * {
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fdf6e3;
-  background-color: #fdf6e3; }
+  background: url('../img/keynote-logo.png') no-repeat;
+  background-position: bottom right;
+  background-size: 15%;
+}
+
+/*.controls {
+    display: none !important;
+}*/
 
 .reveal {
+  /*background-color: rgba(255,255,255, 0.1);*/
   font-family: "Lato", sans-serif;
   font-size: 36px;
   font-weight: normal;
