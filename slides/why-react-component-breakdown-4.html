@@ -1,0 +1,21 @@
+<h2><em class="highlight">Why React?</em> Composability</h2>
+<!-- <br> -->
+<!-- Composable into larger <a href="http://jsfiddle.net/johnthethird/NXCyC/9/">applications</a>
+<br> -->
+<!-- <pre><code class="js language-js">&lt;Transactions data={this.state.transactions} /&gt;</code></pre> -->
+<pre><code class="js language-js" data-lang="js">var Transactions = React.createClass({
+  getDefaultProps: function() {
+    return { data: [] };
+  },
+  render: function() {
+    return (
+      &lt;ul&gt;
+        {this.props.data.map(function(trx) {
+          return &lt;li key={trx.key} className={trx.category}&gt;
+                   {trx.time}: {trx.ticker} {trx.price} ({trx.perc})
+                 &lt;/li&gt;
+        })}
+      &lt;/ul&gt;
+    );
+  }
+});</code></pre>

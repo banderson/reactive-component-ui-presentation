@@ -1,0 +1,37 @@
+<h2><em class="highlight">Why React?</em> Internal State</h2>
+<br>
+<!-- <a href="http://facebook.github.io/react/docs/component-api.html">Manage</a> Your State
+<br> -->
+<pre><code class="js language-js" data-lang="js">var Stocks = React.createClass({
+  // state is self-generated, internal
+  getInitialState: function(){
+    return {
+      transactions: [],
+      running: this.props.autostart
+    }
+  },
+
+  _startTicker: function() {
+    this.setState({running: true});
+  },
+
+  // handle incoming data
+  _handleData: function(data) {
+    var transactions = this.state.transactions.concat(data);
+    if (transactions.length > 10) {
+      transactions.shift()
+    }
+    this.setState({transactions: transactions});
+  },
+
+  render: function() {
+    return (
+      &lt;div&gt;
+        &lt;Transactions data={this.state.transactions} /&gt;
+        &lt;button onClick={this.toggle}&gt;{this.state.running ? 'Stop' : 'Start/Resume'}&lt;/button&gt;
+        &lt;button onClick={this.reset}&gt;Reset&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+
+});</code></pre>

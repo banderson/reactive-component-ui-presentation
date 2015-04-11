@@ -1,0 +1,31 @@
+<h2><em class="highlight">Why React?</em> Passing Data</h2>
+<br>
+<!-- Given current state, how should I <em>render</em>? -->
+<!-- <br> -->
+<pre><code class="js language-js" data-lang="js">var Stocks = React.createClass({
+  // "props" == HTML attributes in JSX, immutable inside components
+  getDefaultProps: function() {
+    return {
+      autostart: false,
+      show: ['GOOG', 'AAPL', 'FB']
+    }
+  },
+
+  // validation (optional)
+  propTypes: {
+    autostart: React.PropTypes.bool,
+    show: React.PropTypes.array.required
+    // renderable, component, func, number, object, string, instanceOf, etc.
+  },
+
+  render: function() {
+    return (
+      &lt;div&gt;
+        &lt;Transactions data={this.state.transactions} /&gt;
+        &lt;button&gt;{this.state.running ? 'Stop' : 'Start/Resume'}&lt;/button&gt;
+        &lt;button&gt;Reset&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+});
+</code></pre>

@@ -1,0 +1,29 @@
+<h2><em class="highlight">Why React?</em> Handling Events</h2>
+<br>
+<!-- Respond to Native Events
+<br> -->
+<pre><code class="js language-js" data-lang="js">var Stocks = React.createClass({
+  // event handlers are just regular functions
+  this.toggle = function(event) { },
+
+  // 'event' object passed in as usual
+  this.reset = function(event) { },
+
+  render: function() {
+    return (
+      &lt;div&gt;
+        &lt;Transactions data={this.state.transactions} /&gt;
+        &lt;button onClick={this.toggle}&gt;{this.state.running ? 'Stop' : 'Start/Resume'}&lt;/button&gt;
+        &lt;button onClick={this.reset}&gt;Reset&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+});</code></pre>
+
+<aside class="notes">
+    <h1>Don't worry, React does the right thing</h1>
+    <h2> * Single event listener</h2>
+        <li>Event Delegation</li>
+        <li>Does NOT inline event handlers</li>
+    </ul>
+</aside>

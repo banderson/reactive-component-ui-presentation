@@ -1,0 +1,14 @@
+<h1><em class="highlight">Why React?</em> Immutability</h1>
+<div><br></div>
+
+<h2>Predictable behavior<br></h2>
+
+<pre><code class="js language-js" data-lang="js">var transaction = new Transaction({amount: 100.00});
+
+// rest easy...
+React.renderComponent(
+    &lt;App data={transaction} /&gt;, document.body
+);
+
+print(transaction.amount); // => 100.00, YAY!
+</code></pre>
