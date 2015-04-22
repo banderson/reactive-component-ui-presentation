@@ -1,5 +1,5 @@
 # <em class="highlight">Statelessness</em> In Reality
-<img src="img/cnt-app.png" alt="">
+<img src="img/app-huge.png" width="70%">
 
 note:
     Put your speaker notes here.
