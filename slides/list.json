@@ -4,7 +4,12 @@
     "agenda.html",
     "how-to-choose-a-framework.md",
     [
+        "managing-state-is-hard.html",
+        "managing-mutable-state-over-time-is-the-devil.html",
+        "server-rendering.html",
         "databinding-1.html",
+        "databinding-2.html",
+        "declarative-vs-imperative.md",
         "databinding-2.html",
         "why-react-bonus-contagious-angular-notes.html",
         "server-rendering.html",
@@ -23,7 +28,6 @@
         "origin-story.md"
     ],
     [
-        "why-react-functional-00.html",
         "going-with-the-grain-2.md",
         "why-react-functional-1.html",
         "going-with-the-grain-functional.md",
@@ -55,6 +59,6 @@
     ],
     "go-with-the-grain.md",
     "choose-simplicity.html",
-    "links-and-resources.md",
-    "thanks.html"
+    "thanks.html",
+    "links-and-resources.md"
 ]
