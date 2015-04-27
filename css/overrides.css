@@ -60,17 +60,16 @@ html * {
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: url('../img/keynote-logo.png') no-repeat;
+  background: url('../img/keynote-logo.png') #fff no-repeat;
   background-position: bottom right;
   background-size: 15%;
 }
 
-.controls {
+/*.controls {
     display: none !important;
-}
+}*/
 
 .reveal {
-  background-color: #fff;
   font-family: "Lato", sans-serif;
   font-size: 36px;
   font-weight: normal;
