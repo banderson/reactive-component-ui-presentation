@@ -61,7 +61,7 @@ html * {
  *********************************************/
 body {
   background: url('../img/keynote-logo.png') #fff no-repeat;
-  background-position: bottom left;
+  background-position: bottom right;
   background-size: 15%;
 }
 
