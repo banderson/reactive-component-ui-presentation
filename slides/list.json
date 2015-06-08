@@ -1,18 +1,15 @@
 [
     "index.html",
-    "agenda.html",
     "react-intro.html",
-    "react-intro-2.html",
+    "agenda.html",
+    "how-to-choose-a-framework.md",
     [
-        "making-good-software-is-hard.html",
-        "me-in-2007.html",
-        "me-every-day-in-2014.html",
         "managing-state-is-hard.html",
-        "managing-mutable-state-over-time-is-the-devil.html"
-    ],
-    [
-        "reactive-state-the-dom.html",
+        "managing-mutable-state-over-time-is-the-devil.html",
+        "server-rendering.html",
         "databinding-1.html",
+        "databinding-2.html",
+        "declarative-vs-imperative.md",
         "databinding-2.html",
         "why-react-bonus-contagious-angular-notes.html",
         "server-rendering.html",
@@ -27,23 +24,41 @@
         "why-react-performance-2.html",
         "why-react-performance-dont-care.html",
         "why-react-performance-dont-care-2.html",
-        "why-react-origins.html"
+        "why-react-origins.html",
+        "origin-story.md"
     ],
     [
-        "why-react-functional-00.html",
-        "why-react-functional-0.html",
+        "going-with-the-grain-2.md",
         "why-react-functional-1.html",
-        "why-react-functional-2.html",
-        "why-react-functional-3.html",
-        "why-react-functional-4.html",
-        "why-react-functional-5.html",
-        "why-react-functional-6.html",
-        "why-react-dataflow-1.html",
-        "why-react-functional-7.html"
+        "going-with-the-grain-functional.md",
+        "going-with-the-grain-functional-mixins.md",
+        "going-with-the-grain-functional-mixin-1.md",
+        "going-with-the-grain-functional-mixin-2.md",
+        "going-with-the-grain-functional-mixin-bad.md",
+        "going-with-the-grain-functional-mixin-3.md",
+        "going-with-the-grain-functional-mixin-4.md",
+        "going-with-the-grain-functional-mixin-wrapper.md",
+        "going-with-the-grain-functional-mixin-wrapper-2.md"
     ],
+    [
+        "going-with-the-grain-stateless.md",
+        "going-with-the-grain-stateless-2.md",
+        "going-with-the-grain-stateless-ideal.md",
+        "going-with-the-grain-stateless-app.md",
+        "going-with-the-grain-stateless-app-child.md",
+        "going-with-the-grain-stateless-container-child.md",
+        "going-with-the-grain-stateless-4.md",
+        "going-with-the-grain-stateless-5.md",
+        "going-with-the-grain-stateless-6.md"
+    ],
+    [
+        "going-with-the-grain-explicit.md",
+        "going-with-the-grain-explicit-1.md",
+        "going-with-the-grain-explicit-2.md",
+        "going-with-the-grain-explicit-7.md"
+    ],
+    "go-with-the-grain.md",
     "choose-simplicity.html",
-    "why-react-bonus.html",
-    "review.html",
-    "links-and-resources.md",
-    "thanks.html"
+    "thanks.html",
+    "links-and-resources.md"
 ]
