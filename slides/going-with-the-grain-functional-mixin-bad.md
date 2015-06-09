@@ -1,4 +1,4 @@
-# <em class="highlight">Functional > OO</em> Clashes!
+# <em class="highlight antipattern">Functional > OO</em> Clashes!
 
 * There's only one lifecycle per component
 * Can't have state names the same as others

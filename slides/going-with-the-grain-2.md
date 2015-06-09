@@ -1,7 +1,6 @@
-# <em class="highlight">Think like React</em> Functional
+# <em class="highlight">Thinking like React</em>
 <br>
-<em>"That is, while there is value in the items on<br>
-the right, we value the items on the left more."</em>
+### <em>"That is, while there is value in the items on the right, we value the items on the left more."</em>
 
 * Functional over OO
 * Stateless over Stateful

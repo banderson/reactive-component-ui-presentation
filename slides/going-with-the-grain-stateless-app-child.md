@@ -1,5 +1,6 @@
 # <em class="highlight">Statelessness</em> In Reality
-<img src="img/cnt-child-app.png" alt="">
+<br>
+<img src="img/cnt-child-app.png" width="1000">
 
 note:
     Put your speaker notes here.

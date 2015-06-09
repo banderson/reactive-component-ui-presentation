@@ -28,6 +28,10 @@
     text-decoration: line-through;
 }
 
+.antipattern {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
 .hs {
     line-height: 80px !important;
     vertical-align: top;
@@ -42,7 +46,7 @@
     top: 15px;
 }
 
-code {
+code.yup {
     padding-left: 20px !important;
     font-size: 160% !important;
     line-height: 130% !important;
@@ -60,16 +64,17 @@ html * {
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: url('../img/keynote-logo.png') #fff no-repeat;
+  background: url('../img/keynote-logo.png') no-repeat;
   background-position: bottom right;
   background-size: 15%;
 }
 
-/*.controls {
+.controls {
     display: none !important;
-}*/
+}
 
 .reveal {
+  /*background-color: rgba(255,255,255, 0.1);*/
   font-family: "Lato", sans-serif;
   font-size: 36px;
   font-weight: normal;
@@ -99,15 +104,17 @@ body {
   text-shadow: none; }
 
 .reveal h1 {
-    font-size: 72px;
+    /*font-size: 96px;*/
+    font-size: 3em;
 }
 
 .reveal h2 {
-    font-size: 61px;
+    font-size: 2.5em;
 }
 
 .reveal h3 {
-    font-size: 50px;
+    font-size: 1.75em;
+    line-height: 1.7em;
 }
 /*.reveal h1 {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }*/
@@ -117,9 +124,9 @@ body {
  * LISTS
  *********************************************/
 .reveal section ul {
-    margin: 1em 0;
-    font-size: 1.3em;
-    line-height: 1.2
+    margin: .75em 0;
+    font-size: 1.7em;
+    line-height: 1.25
 }
 
 .reveal section li {

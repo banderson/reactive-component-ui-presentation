@@ -1,7 +1,7 @@
-# <em class="highlight">Container Components</em>
+# Rules for <em class="highlight">Containers</em>
 
-* **Render no UI** themselves
-* **Fetch and manage data** for subtree
+* They **Render no UI** themselves
+* **Fetch and manage all data** for subtree
 * **No children!** (We need _PureRenderMixin_)
 
 note:

@@ -1,4 +1,4 @@
-##  Go With the Grain <em class="highlight">Think like React</em>
+# <em class="highlight">Go With the Grain</em>
 
 <img src="img/security-breach.jpg" width="60%">
 
